@@ -7,7 +7,7 @@
 /*============header================================================*/
 
 .intro {
-    height: 540vh;
+    height: 530vh;
     background-color: #242635;
     }
 
@@ -337,19 +337,72 @@ h6 {
     margin-left: 30%;
     }
 
+@media(min-width: 540px) {
+
+    .intro {
+        height: 650vh;
+        background-color: #242635;
+    }
+    .img-container {
+        display:inline-flex;
+        justify-content:center;
+        width: 400px;
+        height: 400px;
+        background-color: #d1ceca;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    } 
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .icon-container {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .icon-container-coloritem {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .style-stars {
+        font-size: 3rem;
+    }
+
+    h6 {
+        font-size: 2rem;
+        height: 50%;
+    }
+
+    .title-style {
+        font-size: 1.5rem;
+    }
+}  
+
+
     /*tablet*/
     @media(min-width: 768px) {
-        
-        .row {
-            display:flex;
-        }
 
-        .intro {
-            height: 600vh;
-            background-color: #242635;
-            }
-
-        .img-container {
+       .img-container {
             display:inline-flex;
             justify-content:center;
             width: 450px;
@@ -406,7 +459,7 @@ h6 {
     
     /* Desktop */
 @media(min-width: 992px) {
-    
+
     .lg-hidden {
         display: none;
     }
@@ -414,14 +467,7 @@ h6 {
     #main-menu {
         display:block;
     }
-    .intro {
-        height: 900vh;
-        background-color: #242635;
-        }
-
-    .row {
-        display:flex;
-    }
+    
 
     .img-container {
         display:inline-flex;

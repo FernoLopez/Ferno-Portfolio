@@ -60,7 +60,15 @@
             
             <span class="col-8">
            <h3>1 año de experiencia</h3> 
-           <h4>Web Developer</h4>
+           <div class="btn-container">
+            <p id="btn" class="button">Mí CV</p>
+            <script>
+                document.getElementById('btn').addEventListener('click', e =>{
+                    window.location.href = 'CV.html'
+                })
+            </script>
+           </div>
+            <h4>Web Developer</h4>
             <div class="col-3">
             <span>
             <span class="icon-container">
@@ -177,37 +185,109 @@
                         <a name="Mis portafolios">
                           <h6 class="title-style">Mis portafolios</h6></a>
                       </div>
-                      <div class="item_position">
-                      <div class="col-9 img-style">
-                            <span class="item_position">
-                              <img src="./Img/weatherP1.png" alt="Portafolio1" class="card_portfolio">
-                              <div>
-                                <a href="https://github.com/FernoLopez/Weather-App.git" title="gitHub" class="fa-brands fa-github" style="color:#d1ceca"></a>
-                                <a href="https://ferno-weather-app.netlify.app" title="Netlify" class="fa-solid fa-location-arrow" style="color:#d1ceca"></a>
+                      <div class="portfolio_container">
+                      <div class="card_portfolio">
+                      <div class="card-body">
+                            <div class="card_portfolio-header">
+                              <img src="./Img/weatherP1.png" alt="Portafolio1">
                             </div>
-                            </span>
-                            <span class="item_position">
-                                <img src="./Img/CRUDP3.png" alt="Portafolio2" class="card_portfolio">
-                                <div>
-                                <a href="https://github.com/FernoLopez/Ferno-CRUD.git" title="gitHub" class="fa-brands fa-github" style="color:#d1ceca"></a>
-                                <a href="https://ferno-crud.netlify.app" title="Netlify" class="fa-solid fa-location-arrow" style="color:#d1ceca"></a>
+                              <!-- <div>
+                               <li class="big icon"><a href="https://github.com/FernoLopez/Weather-App.git" title="gitHub" class="fa-brands fa-github" style="color:#d1ceca"><span class="git"></span></a></li>
+                                <li class="big icon"><a href="https://ferno-weather-app.netlify.app" title="Netlify" class="fa-solid fa-location-arrow" style="color:#d1ceca"><span class="net"></span></a></li> 
+                            </div> -->
+                            <div>
+                                <div class="info slide"><h5>Weather App</h5></div>
+                                <div class="info slide">
+                                    <p>Aplicación del clima hecha desde una API que nos despliega el estado climático en el sitio específico con un botón cuya funcionalidad cambia el estado de grados celsius a farenheit. </p>
+                                </div>
                             </div>
-                            </span>
-                            <span class="item_position">
-                                <img src="./Img/Rick&MortyP2.png" alt="Portafolio3" class="card_portfolio">
+                            <div class="card-actions">
+                                <a href="https://github.com/FernoLopez/Weather-App.git"> 
+                                    <button class="big btn">
+                                <span class="fa-brands fa-github"></span>
+                                </button></a>
+                                <a href="https://ferno-weather-app.netlify.app">
+                                    <button class="big btn">
+                                    <span class="fa-solid fa-location-arrow"></span>
+                                </button></a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card_portfolio">
+                        <div class="card-body">
+                              <div class="card_portfolio-header">
+                                <img src="./Img/crud3p.png" alt="Portafolio2">
+                              </div>
+                               <!--  <a href="https://github.com/FernoLopez/Ferno-CRUD.git" title="gitHub" class="fa-brands fa-github" style="color:#d1ceca"></a>
+                                <a href="https://ferno-crud.netlify.app" title="Netlify" class="fa-solid fa-location-arrow" style="color:#d1ceca"></a> -->
                                 <div>
-                                <a href="https://github.com/FernoLopez/RickandMortyAPI.git" title="gitHub" class="fa-brands fa-github" style="color:#d1ceca"></a>
+                                    <div class="info slide"><h5>CRUD</h5></div>
+                                    <div class="info slide">
+                                        <p>Aplicación desplegada desde API con funciones para Crear, leer, actualizar y borrar información (CRUD) con datos específicos.</p>
+                                    </div>
+                                </div>
+                                <div class="card-actions">
+                                    <a href="https://github.com/FernoLopez/Ferno-CRUD.git"><button class="big btn">
+                                    <span class="fa-brands fa-github"></span>
+                                    </button></a>
+                                    <a href="https://ferno-crud.netlify.app"><button class="big btn">
+                                        <span class="fa-solid fa-location-arrow"></span>
+                                    </button></a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="card_portfolio">
+                            <div class="card-body">
+                                  <div class="card_portfolio-header">
+                                <img src="./Img/Rick&MortyP2.png" alt="Portafolio3">
+                                  </div>
+                                <!-- <a href="https://github.com/FernoLopez/RickandMortyAPI.git" title="gitHub" class="fa-brands fa-github" style="color:#d1ceca"></a>
                                 <a href="https://rickandmorty-ferno-api.netlify.app" title="Netlify" class="fa-solid fa-location-arrow" style="color:#d1ceca"></a>
                             </div>
-                            </span>
-                            <span class="item_position">
-                                <img src="./Img/PokeApiP4.png" alt="Portafolio4" class="card_portfolio">
-                                <div>
-                                <a href="https://github.com/FernoLopez/Pokeapi1.git" title="gitHub" class="fa-brands fa-github" style="color:#d1ceca"></a>
+                            </span> -->
+                            <div>
+                                <div class="info slide"><h5>Rick & Morty</h5></div>
+                                <div class="info slide">
+                                    <p>Aplicación desplegada desde API de la serie animada: "Rick & Morty" con input de búsqueda con respecto al ID de la locación e informacíon en cards de cada personaje. </p>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/FernoLopez/RickandMortyAPI.git"><button class="big btn">
+                                <span class="fa-brands fa-github"></span>
+                                </button></a>
+                                <a href="https://rickandmorty-ferno-api.netlify.app"><button class="big btn">
+                                    <span class="fa-solid fa-location-arrow"></span>
+                                </button></a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card_portfolio">
+                        <div class="card-body">
+                              <div class="card_portfolio-header">
+                                <img src="./Img/PokeApiP4.png" alt="Portafolio4">
+                              </div>
+                                <!-- <a href="https://github.com/FernoLopez/Pokeapi1.git" title="gitHub" class="fa-brands fa-github" style="color:#d1ceca"></a>
                                 <a href="https://pokeapi-ferno.netlify.app" title="Netlify" class="fa-solid fa-location-arrow" style="color:#d1ceca"></a>
                             </div>
                         </div>
                             </span>
+                      </div> -->
+                      <div>
+                        <div class="info slide"><h5>POKEAPI</h5></div>
+                        <div class="info slide">
+                            <p>Aplicación desplegada desde API de la serie animada: "POKÉMON" con input de búsqueda y select por tipo. Funciona con login y rutas protegidas, y despliegue a ruta por su ID.</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/FernoLopez/Pokeapi1.git"><button class="big btn">
+                        <span class="fa-brands fa-github"></span>
+                        </button></a>
+                        <a href="https://pokeapi-ferno.netlify.app"><button class="big btn">
+                            <span class="fa-solid fa-location-arrow"></span>
+                        </button></a>
+                    </div>
+                </div>
+              </div>
                       </div>
                       <div>
                         <a name="Contacto">
